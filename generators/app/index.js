@@ -11,10 +11,8 @@ module.exports = class extends generator {
 
     gen() {
         fs.readdir(this.sourceRoot(), (err, items) => {
-            const excluedFiles = [""];
-            items.filter(item => !excluedFiles.includes(item)).forEach(item => {
-              const filePath = this.templatePath(item);
-              this.fs.copy(filePath, this.destinationPath(item));
+            items.forEach(item => {
+              this.fs.copy(this.templatePath(item), this.destinationPath(item));
             });
           });
     }
