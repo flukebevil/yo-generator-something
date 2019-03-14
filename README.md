@@ -7,5 +7,6 @@ Hu is sample project
 use npm to install hu
 
 ```bash
-npm install -i generator-hu
+npm install -i generator-hu 
+test fuck
 ```
