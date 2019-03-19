@@ -8,4 +8,5 @@ use npm to install hu
 
 ```bash
 npm install -i generator-hu 
+
 ```
